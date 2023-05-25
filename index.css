@@ -1,0 +1,338 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth; 
+}
+body{/*le damos la fuente de caligrafacia que queramos que tenga nuestra sitio*/
+    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+}
+
+/*Seleccionamos los tamallos que queremos que contenga nuestros textos*/
+h1{font-size:  1.5em;}
+p{font-size: 1.25em;}
+h2{font-size:  1.5em;}
+h3{font-size:  1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+button{/*Le damos el formato deseado a los botones que tendra nuestro sitio*/
+    font-size: 1. 5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 17, 255, 0.5);
+    color: rgb(241, 5, 241);
+    background-color: rgb(255, 255, 255);
+}
+
+.contenedor{
+    max-width: 1400px;
+    margin: auto;
+}
+/*encabezado*/
+header{
+    margin-top: 0;
+    height: 50px;
+    justify-content: right;
+    display: flex;
+    background-color:rgb(0, 0, 0);
+
+}
+/*Emcabezado*/
+.logo{
+    display: flex;
+}
+.logo img{
+    height: 50px;
+    margin-right: 5px;
+    margin-top: 0;
+}
+
+header.logo{
+    position: absolute;
+    top: 0;
+    left: 2px;
+    right: 0;
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    /*margin-top: 0;
+    padding: flex;
+    font-weight: bold;
+    align-items: right;
+    color: rgb(0, 0, 0);
+    font-size: 2em;*/
+}
+header .contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*color al precionar bontones*/
+button:hover{
+background-color: rgb(153, 0, 255);
+}
+header nav{
+display: flex;
+height: 2px;
+justify-content: space-around;
+text-align: right right;
+padding-bottom: 2px;
+}
+/*Contacto*/
+header a{
+    padding:5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+/*encabezado texto*/
+header a:hover{
+    color:rgb(17, 0, 255)
+}
+
+
+/*Que es el mantenimiento*/
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 130vh;
+    color: #ffffff;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("433.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+/*Cuando se debe hacer el mantenimiento*/
+
+#hola .contenedor{
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding:100px 12px;
+
+}
+/*Trabajos*/
+#Nuestro-trabajo{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#Nuestro-trabajo .contendor{
+    padding: 90px 5px;
+}
+
+#Nuestros-trabajos h2{
+    margin-top: 0;
+    text-align: center;
+    
+}
+
+#Nuestro-trabajo p{
+    display: none;
+}
+#Nuestro-trabajo .carta{
+background-position: center;
+background-size: cover;
+padding: 100px;
+margin: 15px;
+border-radius: 10px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("74d.jpg");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("REPO.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("OS.jpg");
+}
+.carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("Office.jpg");
+}
+
+/*Preguntas*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.preguntas{
+    width: 1200px;
+    margin: 100px auto;
+
+}
+#pre{
+    background-color: #000000;
+}
+.con-prf{
+    box-shadow: 0 0 15px -1px rgba(238, 207, 207, 0.1);
+    padding: 30px;
+
+}
+
+.preguntas .titulo{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.con-prf .item-faq{
+   box-shadow: 0 0 15px -1px rgb(0, 0, 0,.2);
+   margin-bottom: 20px;
+   border-radius: 10px;
+
+}
+.con-prf .item-faq .pregunta{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(96, 88, 211, 0.438);
+    padding: 20px 20px 20px 80px;
+    transition: .4s;
+}
+
+.con-prf .item-faq .pregunta .more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px -1px rgb(0, 0, 0,.2);
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.con-prf .item-faq .pregunta .more:hover{
+  box-shadow: 0 0 15px -1px rgb(0, 0, 0,.4);
+}
+.con-prf .item-faq .pregunta span{
+    position: absolute;
+    left: 10px;
+    font-size: 3rem;
+    top: 10px;
+    opacity: .1;
+}
+.con-prf .item-faq .respuesta{
+    position: relative;
+    padding: 0 20px 0 80px;
+    overflow: hidden;
+    height: 0px;
+    transition: .4s;
+}
+.con-prf .item-faq .respuesta .P{
+    font-size: 1.2rem;
+}
+.con-prf .item-faq .respuesta span{
+    position: absolute;
+    left: 10px;
+    font-size: 3rem;
+    top: -10px;
+    opacity: .2;
+}
+
+footer{
+    background-color: #000000;
+    padding: 0.5rem;
+    color:#ffffff
+}
+footer section{
+    float: right;
+}
+
+footer p{
+    margin: 0;
+    font-size:.9rem;
+}
+@media(min-width:1200px){
+  header{
+    position: fixed;
+    width: 100%;
+   }
+   
+
+   header nav{
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+   }
+   #hero{
+    height: 90vh;
+   }
+   #hero .contendor{
+    font-size: 20px ;
+}
+#hola .contenedor{
+    display: flex;
+}
+#hola .img-contenedor{
+    background-image: linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+    ),url(ventilador.jpg);
+    background-size: cover;
+    background-position: left;
+    height: 500px;
+    width: 500px;
+}
+   #Nuestro-trabajo .programas{
+    display: flex;
+    justify-content: center;
+   }
+   #Nuetros-trabajo p{
+    display: block;
+    margin-bottom: 15px;
+   }
+
+   #Nuetros-trabajo h3{
+    margin-top: 10px;
+   }
+   #Nuetros-trabajo .carta{
+    padding: 15px;
+   }
+}
